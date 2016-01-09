@@ -163,7 +163,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/lge/g4stylus-common/proprietary/bin/location-mq:system/bin/location-mq \
     vendor/lge/g4stylus-common/proprietary/bin/lowi-server:system/bin/lowi-server \
