@@ -58,6 +58,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera2_q3a_core.so:system/vendor/lib/libmmcamera2_q3a_core.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera2_stats_algorithm_sensors.so:system/vendor/lib/libmmcamera2_stats_algorithm_sensors.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
@@ -67,18 +68,26 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_hi553_ff.so:system/vendor/lib/libmmcamera_hi553_ff.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_hi841_eeprom.so:system/vendor/lib/libmmcamera_hi841_eeprom.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_hi841.so:system/vendor/lib/libmmcamera_hi841.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_imx219_eeprom.so:system/vendor/lib/libmmcamera_imx219_eeprom.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_imx219.so:system/vendor/lib/libmmcamera_imx219.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_mn34153.so:system/vendor/lib/libmmcamera_mn34153.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_ov5670_cowell.so:system/vendor/lib/libmmcamera_ov5670_cowell.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_ov5670_lgit.so:system/vendor/lib/libmmcamera_ov5670_lgit.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_ov5670.so:system/vendor/lib/libmmcamera_ov5670.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_ov8858_eeprom.so:system/vendor/lib/libmmcamera_ov8858_eeprom.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_ov8858.so:system/vendor/lib/libmmcamera_ov8858.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_s5k3l2_eeprom.so:system/vendor/lib/libmmcamera_s5k3l2_eeprom.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_s5k3l2.so:system/vendor/lib/libmmcamera_s5k3l2.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmcamera_zc533_eeprom.so:system/vendor/lib/libmmcamera_zc533_eeprom.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
@@ -96,15 +105,25 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libactuator_dw9718_s5k3l2_camera.so:system/vendor/lib/libactuator_dw9718_s5k3l2_camera.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libactuator_dw9718_s5k3l2.so:system/vendor/lib/libactuator_dw9718_s5k3l2.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libactuator_dw9718.so:system/vendor/lib/libactuator_dw9718.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libactuator_dw9719_camcorder.so:system/vendor/lib/libactuator_dw9719_camcorder.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libactuator_dw9719_camera.so:system/vendor/lib/libactuator_dw9719_camera.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libactuator_dw9719.so:system/vendor/lib/libactuator_dw9719.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libactuator_wv517_camcorder.so:system/vendor/lib/libactuator_wv517_camcorder.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libactuator_wv517_camera.so:system/vendor/lib/libactuator_wv517_camera.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libactuator_wv517.so:system/vendor/lib/libactuator_wv517.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libactuator_zc533_camcorder.so:system/vendor/lib/libactuator_zc533_camcorder.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libactuator_zc533_camera.so:system/vendor/lib/libactuator_zc533_camera.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libactuator_zc533.so:system/vendor/lib/libactuator_zc533.so \
     vendor/lge/g4stylus-common/proprietary/lib/libchromatix_hi841_common.so:system/lib/libchromatix_hi841_common.so \
     vendor/lge/g4stylus-common/proprietary/lib/libchromatix_hi841_default_video.so:system/lib/libchromatix_hi841_default_video.so \
     vendor/lge/g4stylus-common/proprietary/lib/libchromatix_hi841_preview.so:system/lib/libchromatix_hi841_preview.so \
     vendor/lge/g4stylus-common/proprietary/lib/libchromatix_hi841_snapshot.so:system/lib/libchromatix_hi841_snapshot.so \
     vendor/lge/g4stylus-common/proprietary/lib/libchromatix_hi841_snapshot_panorama.so:system/lib/libchromatix_hi841_snapshot_panorama.so \
     vendor/lge/g4stylus-common/proprietary/lib/libchromatix_imx219_default_video.so:system/lib/libchromatix_imx219_default_video.so \
+    vendor/lge/g4stylus-common/proprietary/lib/libchromatix_hi553_ff_common.so:system/lib/libchromatix_hi553_ff_common.so \
+    vendor/lge/g4stylus-common/proprietary/lib/libchromatix_hi553_ff_default_video.so:system/lib/libchromatix_hi553_ff_default_video.so \
+    vendor/lge/g4stylus-common/proprietary/lib/libchromatix_hi553_ff_liveshot.so:system/lib/libchromatix_hi553_ff_liveshot.so \
+    vendor/lge/g4stylus-common/proprietary/lib/libchromatix_hi553_ff_snapshot.so:system/lib/libchromatix_hi553_ff_snapshot.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_imx219_common.so:system/vendor/lib/libchromatix_imx219_common.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_imx219_imtech_common.so:system/vendor/lib/libchromatix_imx219_imtech_common.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_imx219_imtech_default_video.so:system/vendor/lib/libchromatix_imx219_imtech_default_video.so \
@@ -116,6 +135,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_imx219_skt_default_video.so:system/vendor/lib/libchromatix_imx219_skt_default_video.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_imx219_snapshot_panorama.so:system/vendor/lib/libchromatix_imx219_snapshot_panorama.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_imx219_snapshot.so:system/vendor/lib/libchromatix_imx219_snapshot.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_mn34153_common.so:system/vendor/lib/libchromatix_mn34153_common.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_mn34153_default_video.so:system/vendor/lib/libchromatix_mn34153_default_video.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_mn34153_liveshot.so:system/vendor/lib/libchromatix_mn34153_liveshot.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_mn34153_preview.so:system/vendor/lib/libchromatix_mn34153_preview.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_mn34153_snapshot.so:system/vendor/lib/libchromatix_mn34153_snapshot.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov5670_common.so:system/vendor/lib/libchromatix_ov5670_common.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov5670_cowell_common.so:system/vendor/lib/libchromatix_ov5670_cowell_common.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov5670_cowell_default_video.so:system/vendor/lib/libchromatix_ov5670_cowell_default_video.so \
@@ -129,6 +153,14 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov5670_lgit_snapshot.so:system/vendor/lib/libchromatix_ov5670_lgit_snapshot.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov5670_liveshot.so:system/vendor/lib/libchromatix_ov5670_liveshot.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov5670_snapshot.so:system/vendor/lib/libchromatix_ov5670_snapshot.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov8858_common.so:system/vendor/lib/libchromatix_ov8858_common.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov8858_default_video.so:system/vendor/libchromatix_ov8858_default_video.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov8858_hfr_120fps.so:system/vendor/libchromatix_ov8858_hfr_120fps.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov8858_hfr_60fps.so:system/vendor/libchromatix_ov8858_hfr_60fps.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov8858_hfr_90fps.so:system/vendor/libchromatix_ov8858_hfr_90fps.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov8858_liveshot.so:system/vendor/libchromatix_ov8858_liveshot.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov8858_preview.so:system/vendor/libchromatix_ov8858_preview.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_ov8858_snapshot.so:system/vendor/libchromatix_ov8858_snapshot.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_s5k3l2_common.so:system/vendor/lib/libchromatix_s5k3l2_common.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_s5k3l2_default_video.so:system/vendor/lib/libchromatix_s5k3l2_default_video.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libchromatix_s5k3l2_preview.so:system/vendor/lib/libchromatix_s5k3l2_preview.so \
@@ -153,27 +185,18 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/libsecureui_svcsock.so:system/vendor/lib/libsecureui_svcsock.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/lge/g4stylus-common/proprietary/bin/location-mq:system/bin/location-mq \
-    vendor/lge/g4stylus-common/proprietary/bin/lowi-server:system/bin/lowi-server \
     vendor/lge/g4stylus-common/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/lge/g4stylus-common/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/lge/g4stylus-common/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
     vendor/lge/g4stylus-common/proprietary/etc/flp.conf:system/etc/flp.conf \
     vendor/lge/g4stylus-common/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/lge/g4stylus-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
-    vendor/lge/g4stylus-common/proprietary/etc/quipc.conf:system/etc/quipc.conf \
     vendor/lge/g4stylus-common/proprietary/etc/lowi.conf:system/etc/lowi.conf \
     vendor/lge/g4stylus-common/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/lge/g4stylus-common/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
@@ -187,29 +210,38 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4stylus-common/proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk:system/priv-app/com.qualcomm.location/com.qualcomm.location.apk \
     vendor/lge/g4stylus-common/proprietary/vendor/bin/slim_ap_daemon:system/vendor/bin/slim_ap_daemon \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/hw/libdataitems.so:system/vendor/lib/hw/libdataitems.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/hw/libflp.so:system/vendor/lib/hw/libflp.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/libESXEGL_adreno.so:system/vendor/lib/egl/libESXEGL_adreno.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/libESXGLESv1_CM_adreno.so:system/vendor/lib/egl/libESXGLESv1_CM_adreno.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/libESXGLESv2_adreno.so:system/vendor/lib/egl/libESXGLESv2_adreno.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/libRBEGL_adreno.so:system/vendor/lib/egl/libRBEGL_adreno.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib/egl/libRBGLESv1_CM_adreno.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/egl/libRBGLESv2_adreno.so:system/vendor/lib/egl/libRBGLESv2_adreno.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
@@ -219,7 +251,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4stylus-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/lge/g4stylus-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/lge/g4stylus-common/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
@@ -229,9 +260,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-    vendor/lge/g4stylus-common/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
-    vendor/lge/g4stylus-common/proprietary/bin/perfd:system/bin/perfd \
+    vendor/lge/g4stylus-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    vendor/lge/g4stylus-common/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
@@ -244,6 +275,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+    vendor/lge/g4stylus-common/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
@@ -251,11 +283,13 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+    vendor/lge/g4stylus-common/proprietary/priv-app/shutdownlistener/shutdownlistener.apk:system/priv-app/shutdownlistener/shutdownlistener.apk \
     vendor/lge/g4stylus-common/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/lge/g4stylus-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/lge/g4stylus-common/proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk \
     vendor/lge/g4stylus-common/proprietary/bin/sensord:system/bin/sensord \
     vendor/lge/g4stylus-common/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
-    vendor/lge/g4stylus-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
+    vendor/lge/g4stylus-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/lge/g4stylus-common/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/lge/g4stylus-common/proprietary/bin/time_daemon:system/bin/time_daemon \
