@@ -1,3 +1,3 @@
 # propriatary_vendor_lge
 
-Initial commit for propriatary vendor blobs to build for the LG G Stylo H631.
+Android 6.0 vendor blobs for LG G Stylo from the H63120b for T-Mobile US.
